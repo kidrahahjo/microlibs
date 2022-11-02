@@ -16,7 +16,12 @@ setup(
     name="microlibs",
     version="0.0.0",
     packages=find_namespace_packages(where="src"),
-    package_dir={"": "src"},
+    package_dir={
+        "": "src",
+    },
+    package_data={
+        "microlibs": ["py.typed"],
+    },
     include_package_data=True,
     author="Hardik Ojha",
     author_email="hardikojha@outlook.com",
